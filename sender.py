@@ -1,6 +1,6 @@
 import requests
 
-name = input('Введите имя: ')
+name = input('Your name: ')
 
 while True:
     data = {
@@ -9,4 +9,3 @@ while True:
     }
 
     response = requests.post('http://127.0.0.1:5000/send', json=data)
-
